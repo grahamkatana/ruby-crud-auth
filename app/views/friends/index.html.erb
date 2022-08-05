@@ -1,0 +1,17 @@
+
+
+<h1>Friends</h1>
+
+<div id="friends" class="row">
+ <% @friends.each do |friend| %>
+<div class="col-md-3">
+  <%= render friend %>
+    <p>
+      <%= link_to "Show this friend", friend,class:"btn btn-outline-success mt-2" %>
+    </p>
+</div>
+<% end %>
+
+</div>
+
+
